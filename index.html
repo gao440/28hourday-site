@@ -269,11 +269,8 @@
   slider.addEventListener("input", update);
   update();
 
-  // Waitlist — both forms share one endpoint.
-  // TODO: replace with your real form endpoint (e.g. Formspree:
-  // https://formspree.io/f/YOUR-FORM-ID). Until then, submissions show an
-  // honest "opens shortly" note — never a fake success.
-  const WAITLIST_ENDPOINT = "https://formspree.io/f/YOUR-FORM-ID";
+  // Waitlist — both forms share one endpoint (Formspree).
+  const WAITLIST_ENDPOINT = "https://formspree.io/f/mykrkjol";
 
   document.querySelectorAll("[data-waitlist]").forEach((form) => {
     const note = form.parentElement.querySelector(".form-note");
