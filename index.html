@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>28 Hour Day — Wake up like you meant to</title>
+  <meta name="description" content="28 Hour Day blocks your late-night apps while you sleep and gives the hours back in the morning. Bedtime app blocking, streaks, and morning check-ins for iPhone.">
+  <meta property="og:title" content="28 Hour Day — Wake up like you meant to">
+  <meta property="og:description" content="Your phone can't talk you out of sleep anymore. Bedtime app blocking, streaks, and morning check-ins.">
+  <meta property="og:image" content="assets/blu-hero.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#">
+      <img src="assets/app-icon.png" alt="28 Hour Day app icon">
+      28 Hour Day
+    </a>
+    <nav class="site-nav">
+      <a href="#how" class="hide-mobile">How it works</a>
+      <a href="#features" class="hide-mobile">Features</a>
+      <a href="#faq" class="hide-mobile">FAQ</a>
+      <a href="#get" class="nav-cta">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero" id="get">
+    <div class="stars" aria-hidden="true">
+      <i style="top:12%;left:8%"></i><i style="top:22%;left:28%;animation-delay:.6s"></i>
+      <i style="top:8%;left:52%;animation-delay:1.2s"></i><i style="top:30%;left:70%;animation-delay:.3s"></i>
+      <i style="top:14%;left:88%;animation-delay:1.8s"></i><i style="top:48%;left:14%;animation-delay:.9s"></i>
+      <i style="top:60%;left:80%;animation-delay:1.5s"></i><i style="top:70%;left:40%;animation-delay:2.1s"></i>
+    </div>
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Wake up like you meant&nbsp;to.</h1>
+        <p class="sub">28 Hour Day blocks your late-night apps while you sleep — and gives the hours back in the morning. No willpower required at 2&nbsp;AM.</p>
+        <div class="cta-row">
+          <a class="badge-appstore soon" href="#faq-appstore">
+            <span class="apple">&#63743;</span>
+            <span><small>Coming soon to the</small>App Store</span>
+          </a>
+        </div>
+        <p class="science-line">
+          <span class="dot">●</span>
+          <span>People who cut screens before bed fall asleep about 30 minutes faster. Protected nights compound — sharper mornings, steadier moods, a healthier heart.</span>
+        </p>
+      </div>
+
+      <div class="hero-visual">
+        <img class="blu" src="assets/blu-wave.png" alt="Blu, the 28 Hour Day mascot, waving">
+        <div class="phone" role="img" aria-label="Preview of the 28 Hour Day home screen">
+          <div class="screen">
+            <div class="app-title">☾ 28 Hour Day</div>
+            <div class="card">
+              <div class="k">CURRENT STATE</div>
+              <div class="dial">
+                <div class="ring"><div>7<small>NIGHTS</small></div></div>
+                <div class="dial-copy"><b>Protected tonight</b>Blocks begin at 10:30 PM</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div class="ic">🌅</div>
+                <div><b>Morning check-in</b>Last night's results are in — ten seconds.</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="k">THIS WEEK</div>
+              <div class="weekdots"><i></i><i></i><i></i><i class="amber"></i><i></i><i></i><i class="off"></i></div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div class="ic">🌙</div>
+                <div><b>Tonight, with help</b>“I protect my sleep.”</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="float-card shield" aria-label="Preview of the bedtime block screen">
+          <div class="fc-title">Pause first.</div>
+          <div class="fc-quote">You said: I protect my sleep.</div>
+          <div class="fc-btn">Keep it blocked</div>
+          <div class="fc-ghost">Unlock for 30 min</div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculator -->
+  <section id="cost">
+    <div class="wrap">
+      <p class="eyebrow">The quiet math</p>
+      <h2>What does scrolling in bed actually cost?</h2>
+      <p class="section-sub">Be honest — most nights, how long do you scroll after you're already in bed?</p>
+
+      <div class="calc">
+        <label for="scrollmins">Minutes in bed, on the phone: <span class="mins" id="minsLabel">45 minutes</span></label>
+        <input type="range" id="scrollmins" min="15" max="120" step="15" value="45"
+               aria-label="Minutes spent scrolling in bed each night">
+        <div class="result" aria-live="polite">
+          <div class="big" id="hoursOut">274 hours</div>
+          <div class="nights" id="nightsOut">That's 34 full nights of sleep this year. Gone — 45 quiet minutes at a time.</div>
+        </div>
+        <p class="bridge">It doesn't have to be this way. 28 Hour Day gives those nights back.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how">
+    <div class="wrap">
+      <p class="eyebrow">How it works</p>
+      <h2>Three steps, then it runs every night.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="n">1</div>
+          <h3>Pick your apps and your bedtime</h3>
+          <p>Choose the apps that keep you up and the window you want protected. iOS Screen Time does the enforcing — this isn't an honor system.</p>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <h3>The shield answers 2 AM for you</h3>
+          <p>Reach for a blocked app at night and you meet a block screen carrying your own words — the reason <em>you</em> wrote for protecting your sleep. Need an exception? A mindful 30-minute unlock re-locks itself.</p>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <h3>Mornings build the streak</h3>
+          <p>A ten-second morning check-in shows what last night gave you: hours protected, streak growing, one honest insight. That's the loop that makes it stick.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="wrap">
+      <p class="eyebrow">What's inside</p>
+      <h2>Built for the moment willpower isn't there.</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="fi">🌙</div>
+          <h3>Automatic bedtime blocking</h3>
+          <p>Your chosen apps shield themselves on schedule, every night. Powered by Apple's Screen Time — your app choices never leave your phone.</p>
+        </div>
+        <div class="feature">
+          <div class="fi">🔥</div>
+          <h3>Streaks, calendar &amp; widget</h3>
+          <p>Watch protected nights stack up morning after morning — in the app, and on a home-screen widget where Blu matches your night: asleep, stretching, or celebrating.</p>
+          <img class="blu-mini" src="assets/blu-asleep.png" alt="">
+        </div>
+        <div class="feature">
+          <div class="fi">◐</div>
+          <h3>Grayscale wind-down</h3>
+          <p>One guided setup and your screen loses its color at bedtime — the feed stops sparkling, and putting the phone down gets easier. Color returns when you wake.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blu -->
+  <section class="blu-band">
+    <div class="wrap">
+      <p class="eyebrow">Meet Blu</p>
+      <h2>A companion, not a drill sergeant.</h2>
+      <p class="section-sub" style="margin-left:auto;margin-right:auto;">28 Hour Day never scolds. Blu turns up for the good moments — and on the rough mornings, he's just as tired as you are. No guilt, no streak-shaming. Tonight is always a fresh start.</p>
+      <div class="poses">
+        <figure><img src="assets/blu-wave.png" alt="Blu waving hello"><figcaption>First hello</figcaption></figure>
+        <figure><img src="assets/blu-asleep.png" alt="Blu asleep"><figcaption>Night protected</figcaption></figure>
+        <figure><img src="assets/blu-morning-stretch.png" alt="Blu stretching in the morning"><figcaption>Morning check-in</figcaption></figure>
+        <figure><img src="assets/blu-thumbs-up.png" alt="Blu giving a thumbs up"><figcaption>Rested &amp; ready</figcaption></figure>
+        <figure><img src="assets/blu-tired.png" alt="Blu looking tired"><figcaption>Rough night — together</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <p class="eyebrow">Questions</p>
+      <h2>Fair questions, straight answers.</h2>
+      <div class="faq">
+        <details id="faq-appstore">
+          <summary>When can I get it?</summary>
+          <p>28 Hour Day is in the final stretch before App Store release. The download badge above will go live the day it ships.</p>
+        </details>
+        <details>
+          <summary>Can't I just open the app anyway?</summary>
+          <p>Blocking is enforced by Apple's Screen Time system, not by a reminder you can swipe away. There is a deliberate escape hatch — a 30-minute unlock that re-locks itself — because real life has exceptions. The difference is you'll make that choice looking at your own words, not on autopilot.</p>
+        </details>
+        <details>
+          <summary>What does it cost?</summary>
+          <p>28 Hour Day Pro is $29.99/year with a 7-day free trial, or $5.99/month. Subscriptions renew automatically until cancelled in your device Settings, and you can cancel anytime during the trial without being charged.</p>
+        </details>
+        <details>
+          <summary>What happens to my data?</summary>
+          <p>Your nights live on your phone. Which apps you block never leaves your device — Apple's Screen Time design makes that data invisible even to us. An account (email only) backs up your streak and stats so they survive a reinstall, and you can delete the account and its backup from inside the app at any time. No ads, no tracking. Details in the <a href="privacy.html">privacy policy</a>.</p>
+        </details>
+        <details>
+          <summary>Does it work with my sleep schedule?</summary>
+          <p>You set your own bedtime and wake time, including schedules that cross midnight and different days of the week. The morning check-in follows <em>your</em> morning, whenever that is.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="wrap">
+      <img class="blu" src="assets/blu-hero.png" alt="Blu, the 28 Hour Day mascot">
+      <h2>Your first protected night is tonight.</h2>
+      <div class="cta-row">
+        <a class="badge-appstore soon" href="#faq-appstore">
+          <span class="apple">&#63743;</span>
+          <span><small>Coming soon to the</small>App Store</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 28 Hour Day</span>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Scroll-cost calculator — same math as the app's onboarding bombshell.
+  const slider = document.getElementById("scrollmins");
+  const minsLabel = document.getElementById("minsLabel");
+  const hoursOut = document.getElementById("hoursOut");
+  const nightsOut = document.getElementById("nightsOut");
+
+  function update() {
+    const mins = Number(slider.value);
+    const hours = Math.max(1, Math.round(mins * 365 / 60));
+    const nights = Math.max(1, Math.round(hours / 8));
+    minsLabel.textContent = mins >= 60
+      ? (mins % 60 === 0 ? `${mins / 60} hour${mins === 60 ? "" : "s"}` : `${Math.floor(mins / 60)}h ${mins % 60}m`)
+      : `${mins} minutes`;
+    hoursOut.textContent = `${hours} hours`;
+    nightsOut.textContent = `That's ${nights} full nights of sleep this year. Gone — ${mins} quiet minutes at a time.`;
+  }
+  slider.addEventListener("input", update);
+  update();
+</script>
+
+</body>
+</html>
