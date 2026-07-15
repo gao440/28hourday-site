@@ -99,6 +99,40 @@ nav.site-nav a:hover { color: var(--primary); text-decoration: none; }
 .badge-appstore small { display: block; font-size: 11px; color: var(--subtext); font-weight: 500; }
 .badge-appstore.soon { opacity: .85; }
 
+/* Waitlist */
+.waitlist { margin-top: 28px; max-width: 460px; }
+.waitlist h3 { font-size: 17px; font-weight: 700; }
+.waitlist .waitlist-body { color: var(--subtext); font-size: 14.5px; margin-top: 6px; }
+.waitlist-form { display: flex; gap: 10px; margin-top: 14px; }
+.waitlist-form input {
+  flex: 1; min-width: 0; background: var(--surface-low);
+  border: 1.5px solid var(--outline); border-radius: 12px;
+  padding: 12px 14px; color: var(--text); font-family: var(--rounded); font-size: 15px;
+}
+.waitlist-form input::placeholder { color: rgba(198, 197, 212, .5); }
+.waitlist-form input:focus { outline: none; border-color: var(--primary); }
+.waitlist-form button {
+  background: linear-gradient(135deg, var(--primary), #8f9aec);
+  color: var(--on-primary); border: none; border-radius: 12px;
+  padding: 12px 18px; font-family: var(--rounded); font-size: 14px; font-weight: 700;
+  cursor: pointer; white-space: nowrap;
+}
+.waitlist-form button:hover { filter: brightness(1.06); }
+.waitlist-form button:disabled { opacity: .6; cursor: default; }
+.waitlist .fine { font-size: 12px; color: var(--subtext); margin-top: 10px; opacity: .85; }
+.waitlist .form-note { font-size: 13px; color: var(--amber); margin-top: 8px; min-height: 1em; }
+.waitlist-success { font-size: 16px; font-weight: 700; color: var(--primary); margin-top: 14px; }
+.waitlist.final { margin-left: auto; margin-right: auto; text-align: center; }
+.waitlist.final .waitlist-form { justify-content: center; }
+@media (max-width: 480px) {
+  .waitlist-form { flex-direction: column; }
+  .waitlist-form button { width: 100%; }
+}
+
+/* Calculator pricing anchor */
+.anchor-line { color: var(--subtext); font-size: 14px; margin-top: 12px; }
+.anchor-line span { color: var(--text); font-weight: 700; }
+
 .science-line {
   margin-top: 22px; font-size: 14px; color: var(--subtext);
   display: flex; gap: 10px; align-items: flex-start; max-width: 48ch;
