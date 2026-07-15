@@ -40,10 +40,10 @@
     <div class="wrap hero-grid">
       <div>
         <h1>Wake up like you meant&nbsp;to.</h1>
-        <p class="sub">The gym, the book, the recipe you saved — they're all waiting on one thing: you, rested. 28 Hour Day blocks your late-night apps while you sleep. No willpower required at 2&nbsp;AM.</p>
+        <p class="sub">The gym, the book, the recipe you saved — they're all waiting on one thing: you, rested. 28 Hour Day blocks the doomscroll at bedtime — no willpower required at 2&nbsp;AM.</p>
         <div class="waitlist">
           <h3>Coming to the App Store — join the waitlist.</h3>
-          <p class="waitlist-body">Be first in line when 28 Hour Day ships. Founding members lock in $19.99/year — forever — instead of $29.99.</p>
+          <p class="waitlist-body">Be first in line when it ships — founding members lock in a lifetime discount.</p>
           <form class="waitlist-form" data-waitlist novalidate>
             <input type="email" name="email" required autocomplete="email" placeholder="you@example.com" aria-label="Email address">
             <button type="submit">Save my spot &rarr;</button>
@@ -53,7 +53,7 @@
         </div>
         <p class="science-line">
           <span class="dot">●</span>
-          <span>People who cut screens before bed fall asleep about 30 minutes faster. Protected nights compound — sharper mornings, steadier moods, a healthier heart.</span>
+          <span>People who cut screens before bed fall asleep ~30 minutes faster. Protected nights compound.</span>
         </p>
       </div>
 
@@ -106,14 +106,13 @@
 
       <div class="calc">
         <label for="scrollmins">Minutes in bed, on the phone: <span class="mins" id="minsLabel">45 minutes</span></label>
-        <input type="range" id="scrollmins" min="15" max="120" step="15" value="45"
+        <input type="range" id="scrollmins" min="15" max="240" step="15" value="45"
                aria-label="Minutes spent scrolling in bed each night">
         <div class="result" aria-live="polite">
           <div class="big" id="hoursOut">274 hours</div>
           <div class="nights" id="nightsOut">That's 34 full nights of sleep this year. Gone — 45 quiet minutes at a time.</div>
         </div>
-        <p class="bridge"><span id="bridgeHours">274 hours</span>. That's a half-marathon's worth of training, every book on your list, and still change left over. You weren't wasting time — you were too tired to spend it. 28 Hour Day gives those nights back.</p>
-        <p class="anchor-line"><span id="anchorNights">34 nights</span> a year, or about 8&cent; a night to get them back. The math isn't close.</p>
+        <p class="bridge">28 Hour Day gives those nights back.</p>
       </div>
     </div>
   </section>
@@ -127,17 +126,17 @@
         <div class="step">
           <div class="n">1</div>
           <h3>Pick your apps and your bedtime</h3>
-          <p>Choose the apps that keep you up and the window you want protected. iOS Screen Time does the enforcing — this isn't an honor system.</p>
+          <p>Pick the apps that keep you up. Apple's Screen Time enforces the window — no honor system.</p>
         </div>
         <div class="step">
           <div class="n">2</div>
           <h3>The shield answers 2 AM for you</h3>
-          <p>Reach for a blocked app at night and you meet a block screen carrying your own words — the reason <em>you</em> wrote for protecting your sleep. Need an exception? A mindful 30-minute unlock re-locks itself.</p>
+          <p>Reach for a blocked app and you meet your own words instead. Real exception? A 30-minute unlock re-locks itself.</p>
         </div>
         <div class="step">
           <div class="n">3</div>
           <h3>Mornings build the streak</h3>
-          <p>A ten-second check-in shows what last night gave you — hours protected, streak growing, one honest insight. Turns out the best productivity hack was unconscious the whole time.</p>
+          <p>A ten-second check-in shows what the night gave you. Turns out the best productivity hack was unconscious the whole time.</p>
         </div>
       </div>
     </div>
@@ -152,18 +151,18 @@
         <div class="feature">
           <div class="fi">🌙</div>
           <h3>Automatic bedtime blocking</h3>
-          <p>Your chosen apps shield themselves on schedule, every night. Powered by Apple's Screen Time — your app choices never leave your phone.</p>
+          <p>Every night, on schedule. Your app choices never leave your phone.</p>
         </div>
         <div class="feature">
           <div class="fi">🔥</div>
           <h3>Streaks, calendar &amp; widget</h3>
-          <p>Watch protected nights stack up — and notice what starts happening around them. Week two is when the weird stuff kicks in: making breakfast, texting back, going to the thing. Blu tracks it all from a home-screen widget, matching your night: asleep, stretching, or celebrating.</p>
+          <p>Protected nights stack up — and week two is when the weird stuff starts: making breakfast, texting back, going to the thing. Blu tracks it all from a home-screen widget.</p>
           <img class="blu-mini" src="assets/blu-asleep.png" alt="">
         </div>
         <div class="feature">
           <div class="fi">◐</div>
           <h3>Grayscale wind-down</h3>
-          <p>One guided setup and your screen loses its color at bedtime — the feed stops sparkling, and putting the phone down gets easier. Color returns when you wake.</p>
+          <p>One setup and the feed loses its color at bedtime. Putting the phone down gets easier. Color returns when you wake.</p>
         </div>
       </div>
     </div>
@@ -201,7 +200,7 @@
         </details>
         <details>
           <summary>What does it cost?</summary>
-          <p>28 Hour Day Pro is $29.99/year with a 7-day free trial, or $5.99/month. Waitlist founding members lock in $19.99/year instead. Subscriptions renew automatically until cancelled in your device Settings, and you can cancel anytime during the trial without being charged.</p>
+          <p>28 Hour Day Pro is $29.99/year — about 8&cent; a night — with a 7-day free trial, or $5.99/month. Waitlist founding members lock in $19.99/year instead. Subscriptions renew automatically until cancelled in your device Settings, and you can cancel anytime during the trial without being charged.</p>
         </details>
         <details>
           <summary>What happens to my data?</summary>
@@ -251,20 +250,16 @@
   const hoursOut = document.getElementById("hoursOut");
   const nightsOut = document.getElementById("nightsOut");
 
-  const bridgeHours = document.getElementById("bridgeHours");
-  const anchorNights = document.getElementById("anchorNights");
-
   function update() {
     const mins = Number(slider.value);
     const hours = Math.max(1, Math.round(mins * 365 / 60));
     const nights = Math.max(1, Math.round(hours / 8));
-    minsLabel.textContent = mins >= 60
+    const pretty = mins >= 60
       ? (mins % 60 === 0 ? `${mins / 60} hour${mins === 60 ? "" : "s"}` : `${Math.floor(mins / 60)}h ${mins % 60}m`)
-      : `${mins} minutes`;
+      : `${mins} quiet minutes`;
+    minsLabel.textContent = mins >= 60 ? pretty : `${mins} minutes`;
     hoursOut.textContent = `${hours} hours`;
-    nightsOut.textContent = `That's ${nights} full nights of sleep this year. Gone — ${mins} quiet minutes at a time.`;
-    bridgeHours.textContent = `${hours} hours`;
-    anchorNights.textContent = `${nights} nights`;
+    nightsOut.textContent = `That's ${nights} full nights of sleep this year. Gone — ${pretty} at a time.`;
   }
   slider.addEventListener("input", update);
   update();
