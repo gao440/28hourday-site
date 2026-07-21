@@ -290,6 +290,51 @@ footer.site nav { display: flex; gap: 20px; }
 .legal ul { padding-left: 22px; }
 .legal strong { color: var(--text); }
 
+/* Blog */
+.blog-index { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+.blog-index h1 { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 38px; }
+.blog-index .blog-intro { color: var(--subtext); margin-top: 10px; font-size: 16px; max-width: 56ch; }
+.post-list { margin-top: 40px; display: grid; gap: 18px; }
+.post-card {
+  display: block; border: 1px solid rgba(69,70,82,.35); border-radius: 16px;
+  padding: 22px 24px; color: var(--text); transition: border-color .15s ease;
+}
+.post-card:hover { border-color: rgba(160,160,190,.6); }
+.post-card h2 { font-size: 20px; line-height: 1.3; }
+.post-card p { color: var(--subtext); font-size: 15px; margin-top: 8px; }
+.post-card .post-meta { color: var(--subtext); font-size: 13px; margin-top: 12px; opacity: .8; }
+
+.post { max-width: 720px; margin: 0 auto; padding: 64px 24px 96px; }
+.post h1 { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 36px; line-height: 1.15; }
+.post .byline { color: var(--subtext); font-size: 14px; margin-top: 12px; }
+.post h2 { font-size: 24px; margin: 44px 0 0; }
+.post h3 { font-size: 19px; margin: 30px 0 0; }
+.post p, .post li { color: var(--subtext); margin-top: 14px; font-size: 16.5px; line-height: 1.65; }
+.post ul, .post ol { padding-left: 24px; }
+.post li { margin-top: 8px; }
+.post strong { color: var(--text); }
+.post a { text-decoration: underline; text-underline-offset: 3px; }
+.post blockquote {
+  margin: 20px 0 0; padding: 14px 20px; border-left: 3px solid rgba(160,160,190,.5);
+  color: var(--subtext); font-style: italic;
+}
+.post .post-cta {
+  margin-top: 48px; border: 1px solid rgba(69,70,82,.45); border-radius: 16px;
+  padding: 24px; text-align: center;
+}
+.post .post-cta h2 { margin-top: 0; font-size: 21px; }
+.post .post-cta p { font-size: 15px; }
+.post .post-cta .nav-cta { display: inline-block; margin-top: 14px; }
+.post .sources { margin-top: 48px; padding-top: 20px; border-top: 1px solid rgba(69,70,82,.35); }
+.post .sources h2 { font-size: 17px; margin-top: 0; }
+.post .sources li { font-size: 14px; overflow-wrap: anywhere; }
+.post .stat-callout {
+  margin-top: 20px; border: 1px solid rgba(69,70,82,.45); border-radius: 14px; padding: 18px 22px;
+}
+.post .stat-callout .big-stat { font-size: 30px; font-weight: 800; color: var(--text); }
+.post .stat-callout p { margin-top: 4px; font-size: 14.5px; }
+.post .further { margin-top: 40px; }
+
 /* Responsive */
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; gap: 56px; }
