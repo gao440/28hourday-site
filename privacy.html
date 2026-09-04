@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy — 28 Hour Day</title>
-  <meta name="description" content="The 28 Hour Day privacy policy: what stays on your phone, what is backed up to your account, and how subscriptions are validated.">
+  <meta name="description" content="The 28 Hour Day privacy policy: what stays on your phone and what optional Cloud Backup stores with your account.">
   <link rel="canonical" href="https://28hourday.com/privacy.html">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="stylesheet" href="styles.css">
@@ -27,7 +27,7 @@
   <h1>Privacy Policy</h1>
   <p class="updated">Effective September 4, 2026 · Applies to the 28 Hour Day iOS app and this website.</p>
 
-  <p>28 Hour Day is local-first: app blocking happens on your phone, while the account you create keeps a backup of the profile and progress data described below. This policy explains what we handle, why, and what never leaves your device.</p>
+  <p>28 Hour Day is local-first: app blocking happens on your phone without an account. If you turn on optional Cloud Backup, your account keeps a backup of the profile and progress data described below. This policy explains what we handle, why, and what never leaves your device.</p>
 
   <h2>What stays on your device</h2>
   <ul>
@@ -35,14 +35,15 @@
     <li><strong>Your local Screen Time report.</strong> Apple's Device Activity report extension processes Screen Time activity on your device to display total usage and up to five app names and durations for the reporting period. These report details are not passed to the main app, sent to our servers or third parties, retained by the report, or synchronized with your account.</li>
     <li><strong>Your local shield and activity records.</strong> To provide unlock-pattern and nightly-progress features, the Screen Time extensions may retain app or category names, interaction times and counts, and aggregate usage-threshold crossings (5, 15, 30, or 60 minutes) in the app's shared on-device storage. These records do not contain per-app duration histories and are not uploaded, backed up to your account, or synchronized off your device.</li>
     <li><strong>Your Apple Health sleep samples.</strong> If you choose to connect Apple Health, 28 Hour Day reads sleep-analysis samples to compare measured sleep on protected and unlocked nights. Those samples are processed and displayed on your device only; they are not included in your account backup or sent to us or any third party.</li>
+    <li><strong>Your local interaction logs.</strong> Limited onboarding and check-in events are stored on your device to support the experience and local troubleshooting. Those event logs are not uploaded. If you enable Cloud Backup, only the profile and aggregate progress fields listed below are backed up.</li>
   </ul>
 
   <h2>What we collect, and why</h2>
   <ul>
     <li><strong>Account information</strong> — your email address, Supabase account identifier, and optional first name are used to sign you in and identify your backup. Authentication is provided by Supabase. If you sign in with Apple or Google, we receive the email address (or Apple's private relay address) those services share.</li>
-    <li><strong>Profile and progress backup</strong> — your bedtime schedule, goals, personal setup statements (including your vision, anti-vision, identity statement, and promises), appearance preference, night history, streaks, aggregate unlock count, and morning check-ins are backed up to your account so they survive a reinstall. This backup is stored with Supabase and protected by row-level security so only your account can access it. Your blocked-app choices are <em>not</em> part of this backup and cannot leave the device.</li>
+    <li><strong>Profile and progress backup</strong> — your bedtime schedule, goals, personal setup statements (including your vision, anti-vision, identity statement, and promises), appearance preference, night history, streaks, aggregate unlock count, and morning check-ins (including your rested rating) are backed up to your account so they survive a reinstall. This backup is stored with Supabase and protected by row-level security so only your account can access it. Your blocked-app choices are <em>not</em> part of this backup and cannot leave the device.</li>
     <li><strong>Feedback you choose to send</strong> — when you use Send Feedback, we store the message, whether it is a bug report or idea, and your app version, iOS version, and device model with Supabase so we can understand and improve the app. We do not attach your goals, sleep schedule, blocked-app choices, Screen Time activity, or other progress data. Feedback sent while signed in is associated with your account identifier; feedback sent while signed out is stored without an account identifier.</li>
-    <li><strong>Purchase and product-interaction data</strong> — subscriptions are processed by Apple. We use RevenueCat to validate purchases; RevenueCat receives purchase receipt information, an anonymous app-user identifier, and the onboarding version shown to the device so we can compare onboarding performance. We never see your payment details.</li>
+    <li><strong>Website waitlist email</strong> — if you join the waitlist on this website, the email address you enter is sent to and retained by Formspree as our form processor so we can send the launch email you requested. It is not used for advertising or tracking, sold, or added to an in-app account unless you separately create one.</li>
   </ul>
 
   <h2>What we don't do</h2>
@@ -52,13 +53,23 @@
     <li>No collection of your browsing history, and no upload or account synchronization of Screen Time report details, blocked-app selections, or local shield/activity records.</li>
   </ul>
 
-  <h2>Subscriptions</h2>
-  <p>28 Hour Day Pro is offered as an auto-renewing subscription ($29.99/year with a 7-day free trial, or $5.99/month; prices may vary by region). Payment is charged to your Apple ID. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period, and can be managed or cancelled in your device's Settings → Apple ID → Subscriptions. Terms of use: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's standard EULA</a>.</p>
+  <h2>Retention, deletion, and service providers</h2>
+  <ul>
+    <li><strong>Account and backup data</strong> is kept while your optional Cloud Backup account exists. Using Delete Account removes the account, its backup, and feedback linked to that account.</li>
+    <li><strong>Anonymous feedback</strong> is kept for no more than 24 months so we can investigate reported issues and plan improvements, then deleted. Because feedback sent while signed out contains no account or contact identifier, it cannot be located through account deletion.</li>
+    <li><strong>Waitlist email</strong> is kept until the requested launch email is sent, then deleted, or removed sooner if you email us from that address. We process removal requests within 30 days.</li>
+    <li><strong>On-device data</strong> remains until you remove it using the app's account-deletion controls where applicable or delete the app.</li>
+  </ul>
+  <p>Supabase processes optional account, backup, and app-feedback data; Formspree processes website waitlist submissions. We require service providers that receive user data to use it only to provide their contracted service and to maintain protections equivalent to those described in this policy. We do not authorize either provider to use this data for advertising or cross-service tracking.</p>
+
+  <h2>Price</h2>
+  <p>Version 1.0 is free and has no subscriptions or in-app purchases.</p>
 
   <h2>Deleting your data</h2>
   <ul>
-    <li><strong>Delete your account</strong> from inside the app (Settings → Account → Delete Account). This permanently deletes your sign-in and cloud backup, along with account-scoped profile and progress data, feedback associated with your account, Screen Time selections, and local shield/activity records on that device. Feedback sent while signed out has no account identifier and therefore cannot be found or removed through account deletion. When applicable, the app also asks Apple to revoke Sign in with Apple access; if automatic revocation cannot be confirmed, it shows the steps for removing access in Apple Account settings. Account deletion does not cancel an Apple subscription; manage or cancel it separately through Apple.</li>
+    <li><strong>Delete your account</strong> from inside the app (Settings → Account → Delete Account). This permanently deletes your sign-in and cloud backup, along with account-scoped profile and progress data, feedback associated with your account, Screen Time selections, and local shield/activity records on that device. Feedback sent while signed out has no account identifier and therefore cannot be found or removed through account deletion. When applicable, the app also asks Apple to revoke Sign in with Apple access; if automatic revocation cannot be confirmed, it shows the steps for removing access in Apple Account settings.</li>
     <li><strong>Delete the app</strong> to remove any remaining on-device data.</li>
+    <li><strong>Leave the website waitlist</strong> by emailing the contact address below from the address you submitted and asking us to remove it.</li>
   </ul>
 
   <h2>Children</h2>
