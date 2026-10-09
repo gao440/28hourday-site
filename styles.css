@@ -139,62 +139,25 @@ nav.site-nav a:hover { color: var(--primary); text-decoration: none; }
 }
 .science-line .dot { color: var(--amber); font-size: 16px; line-height: 1.4; }
 
-/* Phone mockup */
-.hero-visual { position: relative; display: flex; justify-content: center; }
-.hero-visual .blu { position: absolute; width: 180px; bottom: -20px; left: -48px; z-index: 3; filter: drop-shadow(0 12px 24px rgba(0,0,0,.45)); }
-
-.phone {
-  width: 300px; border-radius: 44px; padding: 12px;
-  background: #05070a; border: 1px solid #2a2e36;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, .55), 0 0 0 1px rgba(188,194,255,.06);
-  position: relative; z-index: 2;
-}
-.phone .screen {
-  border-radius: 34px; overflow: hidden; background: var(--surface);
-  padding: 18px 16px 22px; min-height: 520px;
-  display: flex; flex-direction: column; gap: 14px;
-}
-.screen .app-title { display: flex; align-items: center; gap: 7px; color: var(--primary); font-family: var(--serif); font-style: italic; font-size: 17px; }
-.screen .card {
-  background: var(--surface-card); border-radius: 18px; padding: 14px;
-  border: 1px solid rgba(69,70,82,.4);
-}
-.screen .k { font-size: 9px; letter-spacing: 2px; color: var(--subtext); font-weight: 700; }
-.screen .dial { display: flex; align-items: center; gap: 14px; margin-top: 8px; }
-.screen .ring {
-  width: 84px; height: 84px; border-radius: 50%;
-  background: conic-gradient(var(--primary) 0 76%, var(--surface-high) 76% 100%);
-  display: grid; place-items: center; flex: none;
-}
-.screen .ring > div {
-  width: 66px; height: 66px; border-radius: 50%; background: var(--surface-card);
-  display: grid; place-items: center; text-align: center;
-  font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--text);
-}
-.screen .ring small { display: block; font-size: 8px; letter-spacing: 1px; color: var(--subtext); font-family: var(--rounded); font-style: normal; }
-.screen .dial-copy { font-size: 12.5px; color: var(--subtext); }
-.screen .dial-copy b { color: var(--text); display: block; font-size: 13.5px; }
-.screen .row { display: flex; align-items: center; gap: 10px; font-size: 12.5px; color: var(--subtext); }
-.screen .row .ic { width: 30px; height: 30px; border-radius: 50%; background: rgba(188,194,255,.12); display: grid; place-items: center; font-size: 14px; flex: none; }
-.screen .row b { color: var(--text); display: block; font-size: 13px; }
-.screen .weekdots { display: flex; gap: 6px; margin-top: 8px; }
-.screen .weekdots i { width: 9px; height: 9px; border-radius: 50%; background: var(--primary); }
-.screen .weekdots i.off { background: var(--surface-high); }
-.screen .weekdots i.amber { background: var(--amber); }
-
-.float-card {
-  position: absolute; z-index: 4; background: var(--surface-card);
-  border: 1px solid rgba(188,194,255,.25); border-radius: 18px; padding: 14px 16px;
-  box-shadow: 0 18px 50px rgba(0,0,0,.5); width: 210px;
-}
-.float-card.shield { right: -64px; top: 200px; width: 196px; }
-.float-card .fc-title { font-family: var(--serif); font-style: italic; font-size: 17px; }
-.float-card .fc-quote { color: var(--primary); font-size: 12.5px; font-weight: 600; margin-top: 6px; }
-.float-card .fc-btn {
-  margin-top: 10px; background: var(--primary); color: var(--on-primary);
-  border-radius: 999px; text-align: center; font-size: 11.5px; font-weight: 700; padding: 7px;
-}
-.float-card .fc-ghost { text-align: center; font-size: 10.5px; color: var(--subtext); margin-top: 6px; }
+/* Captures of the current app */
+.hero-visual { position: relative; display: flex; flex-direction: column; align-items: center; }
+.hero-visual .blu { position: absolute; width: 158px; height: auto; bottom: 40px; left: -22px; z-index: 3; filter: drop-shadow(0 12px 24px rgba(0,0,0,.45)); pointer-events: none; }
+.phone { width: min(278px, 100%); border-radius: 40px; padding: 8px; background: #05070a; border: 1px solid #3b3e4b; box-shadow: 0 30px 80px rgba(0,0,0,.45); }
+.phone a { display: block; border-radius: 32px; overflow: hidden; }
+.app-screenshot { display: block; width: 100%; height: auto; }
+.hero-visual figcaption { color: var(--subtext); font-size: 12px; text-align: center; margin-top: 16px; }
+.hero .eyebrow { margin-bottom: 20px; }
+.screens-section { background: linear-gradient(180deg, rgba(188,194,255,.035), transparent); }
+.screenshot-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; margin-top: 42px; }
+.screenshot-grid figure { min-width: 0; }
+.screenshot-link { display: block; max-width: 272px; margin: 0 auto; border: 1px solid #3b3e4b; padding: 6px; border-radius: 36px; background: #05070a; transition: transform .2s, border-color .2s; }
+.screenshot-link:hover { transform: translateY(-4px); border-color: var(--primary); }
+.screenshot-link img { display: block; width: 100%; height: auto; border-radius: 29px; }
+.screenshot-grid figcaption { margin: 22px auto 0; max-width: 290px; }
+.screenshot-grid h3 { font-size: 19px; }
+.screenshot-grid p { color: var(--subtext); font-size: 15px; margin-top: 8px; }
+.screenshot-note { display: inline-block; color: var(--primary); font-size: 12px; margin-top: 12px; }
+.gallery-hint { color: var(--subtext); font-size: 13px; margin-top: 32px; text-align: center; }
 
 /* Sections */
 section { padding: 76px 0; }
@@ -340,12 +303,61 @@ footer.site nav { display: flex; gap: 20px; }
   .hero-grid { grid-template-columns: 1fr; gap: 56px; }
   .hero { padding-top: 56px; }
   .hero-visual { margin-top: 8px; }
-  .float-card.shield { right: 0; }
+  .hero-visual .blu { left: calc(50% - 220px); }
   .steps, .features { grid-template-columns: 1fr; }
   nav.site-nav a.hide-mobile { display: none; }
 }
 @media (max-width: 480px) {
-  .hero-visual .blu { width: 140px; left: -8px; }
-  .float-card.shield { display: none; }
+  .hero-visual .blu { width: 116px; left: calc(50% - 175px); }
+  .screenshot-grid { grid-template-columns: 1fr; gap: 44px; }
+  .screenshot-grid figcaption { text-align: center; }
   .calc { padding: 30px 18px; }
 }
+
+/* Keyboard access, anchor offsets, and compact layouts. */
+section[id] { scroll-margin-top: 90px; }
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--primary); outline-offset: 5px; }
+.skip-link { position: fixed; left: 16px; top: -80px; z-index: 100; background: var(--primary); color: var(--on-primary); padding: 10px 16px; border-radius: 10px; }
+.skip-link:focus { top: 12px; }
+footer.site nav { flex-wrap: wrap; }
+@media (max-width: 700px) and (min-width: 481px) {
+  .screenshot-grid { gap: 20px; }
+  .screenshot-link { border-radius: 26px; padding: 4px; }
+  .screenshot-link img { border-radius: 21px; }
+  .screenshot-grid h3 { font-size: 17px; }
+}
+@media (max-width: 380px) {
+  header.site .wrap { padding-left: 16px; padding-right: 16px; }
+  .brand { font-size: 14px; gap: 7px; }
+  .brand img { width: 28px; height: 28px; }
+  .nav-cta { padding: 9px 12px; font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .screenshot-link { transition: none; }
+  .screenshot-link:hover { transform: none; }
+}
+
+/* Full check-in beside focused, unaltered app details. */
+.screenshot-grid { grid-template-columns: 1fr 1.2fr; column-gap: 64px; row-gap: 44px; align-items: center; }
+.checkin-figure { grid-column: 1; }
+.nights-figure { grid-column: 2; }
+.detail-link { max-width: 420px; border-radius: 22px; padding: 12px; background: #10141a; }
+.screenshot-detail { display: block; overflow: hidden; }
+.screenshot-detail img { border-radius: 0; }
+.nights-detail { aspect-ratio: 1320 / 1180; }
+.nights-detail img { margin-top: -12%; }
+.screenshot-grid .nights-figure figcaption { max-width: 420px; }
+@media (max-width: 700px) {
+  .screenshot-grid { grid-template-columns: 1fr; gap: 44px; }
+  .checkin-figure, .nights-figure { grid-column: auto; }
+  .checkin-figure { order: -1; }
+  .screenshot-grid figcaption { text-align: left; }
+  .detail-link { border-radius: 22px; padding: 12px; }
+  .screenshot-detail img { border-radius: 0; }
+}
+
+.hero-capture { width: min(392px, 100%); padding: 12px; border: 1px solid #3b3e4b; border-radius: 28px; background: #10141a; box-shadow: 0 30px 80px rgba(0,0,0,.4); }
+.hero-capture a { display: block; border-radius: 16px; overflow: hidden; }
+.schedule-detail { aspect-ratio: 1320 / 1390; }
+.schedule-detail img { margin-top: -32%; }

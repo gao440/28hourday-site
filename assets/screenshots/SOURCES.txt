@@ -1,0 +1,21 @@
+28 Hour Day website screenshots
+Captured October 9, 2026 from the current SwiftUI app, version 1.0 (7).
+
+All three originals are 1320 x 2868 PNGs from an iPhone 17 Pro Max simulator
+running iOS 26.5. WebP copies are resized and compressed for page loading.
+No UI was generated, reconstructed, or painted over.
+
+schedule.png: Settings > Sleep Schedule. The homepage uses a CSS crop of
+the real bedtime, wake-time, and active-night controls.
+check-in.png: The normal Morning Check-in flow, opened through the app's
+debug testing menu. No answer was entered.
+nights.png: Nights with example history from the app's built-in Seed Demo
+Stats action. The page labels this example history and shows a CSS crop
+of the summary. These numbers are not user outcomes or measured sleep.
+
+The full originals remain available through the image links. They preserve
+simulator setup warnings. These captures show the app interface; simulator
+captures do not establish that Screen Time blocking works on a real iPhone.
+
+The capture build included the existing October 9 working-tree changes.
+The App Store submission can differ; this page still uses prelaunch signup.
