@@ -186,6 +186,7 @@ h2 {
 }
 .calc .nights { color: var(--text); font-size: 20px; margin-top: 10px; }
 .calc .bridge { color: var(--subtext); font-size: 15px; margin-top: 18px; font-style: italic; font-family: var(--serif); }
+.calc .calc-note { color: var(--subtext); font-size: 12px; margin: 14px auto 0; max-width: 66ch; }
 
 /* Steps */
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 40px; }
